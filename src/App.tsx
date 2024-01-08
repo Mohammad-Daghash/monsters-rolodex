@@ -1,7 +1,6 @@
 import { useState, useEffect, ChangeEvent } from 'react';
 import CardList from './components/card-list/card-list.component';
 import SearchBox from './components/search-box/search-box.component';
-import ErrorBoundry from './components/ErrorBoundry';
 import './App.css';
 import { getData } from './utils/data.utils';
 
@@ -52,9 +51,7 @@ function App() {
         placeholder="search monster"
         onChangeHandler={onSearchChange}
       />
-      <ErrorBoundry>
-        <CardList monsters={filteredMonsters} />
-      </ErrorBoundry>
+      <CardList monsters={filteredMonsters} />
     </div>
   );
 }
