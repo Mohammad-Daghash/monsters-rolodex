@@ -1,7 +1,8 @@
 {
-  "name": "Monsters Rolodex",
+  "name": "monsters-rolodex",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^6.1.6",
     "@testing-library/react": "^14.1.2",
